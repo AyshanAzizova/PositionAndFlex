@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Blinker', sans-serif;
+}
+header nav .navbar {
+    width: 80%;
+    margin: 0 auto;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav .navbar .navLeft {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    position: relative;
+}
+header nav .navbar .navLeft .navlist {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    font-size: 16px;
+    position: relative;
+}
+.navLeft .logo {
+    font-size: 22px;
+    font-weight: 300;
+    color: #212529;
+    text-decoration: none;
+}
+.navLeft .navlist a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #6b6b6c;
+}
+.navlist a:hover {
+    color: #212529;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid gray;
+    border-radius: 5px;
+    list-style-type: none;
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 32px;
+    background-color: white;
+    color: #212529;
+    padding: 10px;
+    display: none;
+}
+.list a{
+    padding: 5px;
+}
+.navlist .shop:hover .list{
+    display: block;
+}
+.navRight button {
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.navRight button:hover{
+background-color: black;
+color: white;
+}
+.navRight button i {
+    margin: 0 2px;
+}
+.navRight button span {
+    margin: 0 4px;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    padding:4px 6px;
+}
+.firstSection {
+    background-color: #212529;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    text-align: center;
+}
+.firstSection .content h1 {
+    font-size: 56px;
+    color: white;
+    padding: 10px 0;
+}
+.firstSection .content p {
+    font-size: 20px;
+    color: #ffffff80;
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 40px;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 96px auto;
+}
+.cards .card {
+    width: 22%;
+    height: 370px;
+    border: 1px solid rgb(176, 176, 176);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.cards .card img {
+    width: 100%;
+    height: 100%;
+}
+.cardImage {
+    position: relative;
+}
+.cardImage div {
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    text-align: center;
+    width: 38px;
+    height: 20px;
+    font-size: 14px;
+    font-weight: 900;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+}
+
+.cardText {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    gap: 15px;
+}
+.stars {
+    display: flex;
+    flex-direction: row;
+}
+.cardText h5 {
+    font-size: 20px;
+}
+.cardText i {
+    color: #ffc107;
+    font-size: 14px;
+}
+.cardButton button {
+    background-color: transparent;
+    padding: 9px 15px;
+    cursor: pointer;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.cardButton button:hover {
+    background-color: black;
+    color: white;
+    transition: 0.4s;
+}
+footer .footer {
+    margin-top: 10px;
+    height: 120px;
+    background-color: #212529;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
